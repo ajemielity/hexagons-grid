@@ -2,6 +2,7 @@ body{
   font-family: 'Open Sans', arial, sans-serif;
   background:rgb(123, 158, 158);
 
+
 }
 *{
   margin:0;
@@ -11,7 +12,7 @@ body{
 #grid {
   position: relative;
   width: 90%;
-  margin: 0 auto;
+  margin: 15px auto 0 auto;
   padding: 0; /* Clears unordered list default of 40px */
 }
 
@@ -25,9 +26,7 @@ body{
   list-style-type: none;
   position: relative;
   float: left;
-/*  width: 27.85714285714286%;*/
   width: 16.71428571428572%;
-  /*padding: 0 0 32.16760145166612% 0;*/
   padding: 0 0 19.30056087099967% 0;
 
   -o-transform: rotate(-60deg) skewY(30deg);
@@ -59,14 +58,17 @@ body{
   visibility: visible;
 }
 
-#grid li:nth-child(5n+2), #grid li:nth-child(5n+3), #grid li:nth-child(5n+4) {
-  margin: 0 1%;
+#grid li {
+  margin-left: 0.6%;
 }
 
+#grid li:nth-child(10n+6) {
+  margin-left: 1%;
+}
+
+
 #grid li:nth-child(10n+6), #grid li:nth-child(10n+7), #grid li:nth-child(10n+8), #grid li:nth-child(10n+9), #grid li:nth-child(10n+10) {
-  /*margin-top: -6.9285714285%;*/
   margin-top: -4.157142857100001%;
-/*  margin-bottom: -6.9285714285%;*/
   margin-bottom: -4.157142857100001%;
   -o-transform: translateX(50%) rotate(-60deg) skewY(30deg);
   -moz-transform: translateX(50%) rotate(-60deg) skewY(30deg);
@@ -75,6 +77,3 @@ body{
   transform: translateX(50%) rotate(-60deg) skewY(30deg);
 }
 
-#grid li:nth-child(10n+6) {
-  margin-left: 0.5%;
-}
